@@ -15,6 +15,7 @@ public class Goods {
   @Temporal(TemporalType.TIMESTAMP)
   @Column(name = "created_date")
   private Date createdDate;
+  private Date updateDate;
 
   @PrePersist
   protected void onCreate() {
@@ -67,6 +68,14 @@ public class Goods {
 
   public void setCreatedDate(Date createdDate) {
     this.createdDate = createdDate;
+  }
+
+  public Date getUpdateDate() {
+    return updateDate;
+  }
+
+  public void setUpdateDate(Date updateDate) {
+    this.updateDate = updateDate;
   }
 }
 
