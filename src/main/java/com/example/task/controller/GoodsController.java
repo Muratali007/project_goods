@@ -44,11 +44,4 @@ public class GoodsController {
       return Response.status(Response.Status.INTERNAL_SERVER_ERROR).build();
     }
   }
-
-  @POST
-  @Path("/update")
-  @Produces("text/plain")
-  public String updateGoods() {
-    return "WELCOME MURATALI";
-  }
 }
